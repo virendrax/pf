@@ -45,3 +45,9 @@ document.body.appendChild(cursorGlow);
 document.addEventListener('mousemove', (e) => {
     cursorGlow.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
 });
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('nav');
+
+hamburger.addEventListener('click', function () {
+  nav.classList.toggle('active');
+});
